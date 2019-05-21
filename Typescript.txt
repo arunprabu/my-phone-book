@@ -1,0 +1,98 @@
+TypeScript 
+===========
+Compiled to JS Language 
+Typescript should be transpiled (using transpiler) 
+npm i typescript --save-dev 
+
+TypeScript = JS + Datatype + OOPS 
+developed by Microsoft team 
+
+JS is Loosely typed it will give us bugs when building SPA
+----
+var x = 10;
+x = true; 
+x = []
+x = {}
+x = function(){}  
+
+Strictly typed language 
+=-=========
+String myName = "Arun";
+myName = true; // error 
+
+Typescript 
+===
+Optionally-typed  language 
+---
+var x = 10;  //valid -- implicit data typing 
+x =true; //error
+var y: number = 100; //valid   -- explicit data type 
+y = "test"; //error 
+
+Primitive datatypes 
+=============
+string, number, boolean, undefined, null, symbol 
+
+other data types 
+------------
+object  
+
+
+Typescript data typings 
+=====
+myName: string = "Arun";
+age: number =20;
+isLoggedIn: boolean = false;
+y: undefined;
+x: null = null; 
+myProfile: Object  = {
+  name: "Arun",
+  exp: 13
+}
+
+skillsList: Array<string> = [
+  'html', 'css', 'js'
+];
+
+skillsList1: string[] = [
+  'html', 'css', 'js'
+];
+
+everything: any = []
+everything = {} 
+everything  = true; 
+
+someRandomList: Array<any> = [
+  235, "ergd"
+]
+
+someRandomList: any[] = [
+  235, "ergd"
+];
+
+================
+
+Template Literal
+----
+
+var _htmlTemplate = "<div>\n" + 
+                    "\t<p> Test</p>\n"+
+                    "</div>";
+
+
+var _newTempl = `<div>
+                   <p> Test </p>
+                 </div>`;
+
+var x = 100;
+var y =200; 
+var values = "x is :" + x  + " y is :" + y;
+
+var newValues = `x is : ${x} y is ${y}`; 
+
+================================
+
+
+Ref: http://github.com/arunprabu/typescript-in-2-days
+
+
