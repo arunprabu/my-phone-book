@@ -29,9 +29,8 @@ let's have active class. have routerLinkActive in li in nav.component.html
 <li routerLinkActive="active" ...>
 
 
-
 Step7: Now, when you see the navigation menu, active class will be added in another link also. 
-Let's fix it.
+Let's fix it. add routerLinkActiveOptions in first li alone.
 
 <ul class="nav navbar-nav">
     <li routerLinkActive="active" 
