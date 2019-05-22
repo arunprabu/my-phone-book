@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { CebComponent } from './ceb/ceb.component';
 
 @Component({
   selector: 'app-concepts',
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
     }`
   ]
 })
-export class ConceptsComponent implements OnInit {
+export class ConceptsComponent implements OnInit, AfterViewInit {
 
   //ts   
   myAppName: string = "Phone Book";
@@ -26,10 +27,23 @@ export class ConceptsComponent implements OnInit {
 
   devName: string = "Arun";
   
+  //for custom event binding
+  msgReceived: string;
 
-  constructor() { }
+
+  // accessing child component data from parent using @ViewChild()
+  @ViewChild(CebComponent) cebData;
+
+  constructor() {
+    console.log(this.cebData);
+  }
 
   ngOnInit() {
+    
+  }
+
+  ngAfterViewInit(){
+    console.log(this.cebData);
   }
 
   getExp(){
@@ -53,5 +67,6 @@ export class ConceptsComponent implements OnInit {
   //for custom event binding
   onMyProfileLoadedHandler(event){
     console.log(event);
+    this.msgReceived = event;
   }
 }

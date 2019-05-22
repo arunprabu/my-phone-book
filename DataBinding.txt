@@ -17,7 +17,11 @@ Cross Component Communication
       @Input() 
       ng g c concepts/cpb -is 
   2. Child to Parent Communication 
-      Custom Event Binding 
+      1. Custom Event Binding 
+          ng g c concepts/ceb -is 
+      2. @ViewChild()
+      3. @ViewChildren()  -- ToDo 
+
   3. Any to Any component Communication
       ...
       ...
