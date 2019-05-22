@@ -1,0 +1,53 @@
+Possible Project Structures
+=========
+src/  
+  app/
+    shared/
+      header/
+      footer/
+      nav/
+    home/
+    concepts/
+    contacts/
+      ...
+      ...
+      ...
+      ...
+      
+    about/
+    dashboard/
+    reports/
+    auth/
+      login/
+      signup/
+      reset-pw/
+    ...
+    ...
+    ...
+  
+
+
+
+  or the following one...
+  src/
+  app/
+    components/
+      shared/
+      dashboard/
+      reports/
+      auth/
+      concepts/
+      contacts/
+    directives/
+      ...
+      ...
+    services/
+      ..
+      ..
+    pipes/
+      ..
+      ..
+    guards/
+      ..
+    models/
+    config/ 

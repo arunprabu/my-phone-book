@@ -1,0 +1,34 @@
+DataBinding
+====
+
+Communication within a component
+1. String Interpolation 
+    {{ }}   - TS => HTML 
+2. Property Binding 
+    []  - TS => HTML 
+3. Event Binding 
+    ()   - TS => HTML 
+4. Two Way Binding 
+    [(ngModel)] TS <=> HTML 
+
+Cross Component Communication 
+  1. Parent to Child Communication 
+      Custom Property Binding 
+      @Input() 
+      ng g c concepts/cpb -is 
+  2. Child to Parent Communication 
+      Custom Event Binding 
+  3. Any to Any component Communication
+      ...
+      ...
+
+
+
+
+
+
+
+
+
+  5. Custom Property Binding 
+  6. Custom Event Binding 
