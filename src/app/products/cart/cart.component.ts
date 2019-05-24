@@ -18,4 +18,8 @@ export class CartComponent implements OnInit {
     })
   }
 
+  removeCartItem(pdt){
+    this.shoppingCartDataService.removePdtFromObservableArray(pdt);
+  }
+
 }

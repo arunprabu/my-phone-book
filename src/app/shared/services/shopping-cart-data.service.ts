@@ -42,4 +42,13 @@ export class ShoppingCartDataService {
       this.cartItemsList.next(newArr);
     })
   }
+
+  removePdtFromObservableArray(idx){
+    this.latestCartItems.pipe(take(1)).subscribe(val => {
+      const arr = this.cartItemsList.getValue()
+      console.log(arr, idx);
+      arr.splice(idx, 1)
+      this.cartItemsList.next(arr);
+    })
+  }
 }
