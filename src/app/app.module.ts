@@ -19,8 +19,8 @@ import { ColorizrDirective } from './concepts/sd/colorizr.directive';
 import { AddContactComponent } from './contacts/add-contact/add-contact.component';
 import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';  
 import { ProductsComponent } from './products/products.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartComponent } from './cart/cart.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { CartComponent } from './products/cart/cart.component';
 
 //Decorators  - function that gets a meta data as arg 
 //

@@ -8,8 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { AddContactComponent } from './contacts/add-contact/add-contact.component';
 import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
 import { ProductsComponent } from './products/products.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartComponent } from './cart/cart.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { CartComponent } from './products/cart/cart.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
