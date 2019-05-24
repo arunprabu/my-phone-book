@@ -17,10 +17,8 @@ import { CebComponent } from './concepts/ceb/ceb.component';
 import { SdComponent } from './concepts/sd/sd.component';
 import { ColorizrDirective } from './concepts/sd/colorizr.directive';
 import { AddContactComponent } from './contacts/add-contact/add-contact.component';
-import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';  
-import { ProductsComponent } from './products/products.component';
-import { ProductDetailsComponent } from './products/product-details/product-details.component';
-import { CartComponent } from './products/cart/cart.component';
+import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
+import { ProductsModule } from './products/products/products.module';
 
 //Decorators  - function that gets a meta data as arg 
 //
@@ -39,17 +37,15 @@ import { CartComponent } from './products/cart/cart.component';
     SdComponent,
     ColorizrDirective,
     AddContactComponent,
-    ContactDetailsComponent,
-    ProductsComponent,
-    ProductDetailsComponent,
-    CartComponent
+    ContactDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent] // Step3: AppModule inturn bootstrapped with a Componennt --AppComponent
