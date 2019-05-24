@@ -7,14 +7,20 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AboutComponent } from './about/about.component';
 import { AddContactComponent } from './contacts/add-contact/add-contact.component';
 import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
+import { AuthGuard } from './shared/guards/auth.guard';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'concepts', component: ConceptsComponent },
-  { path: 'contacts', component: ContactsComponent },
-  { path: 'contacts/new', component: AddContactComponent },
-  { path: 'contacts/:id', component: ContactDetailsComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'concepts', component: ConceptsComponent},
+  { path: 'contacts', children: [
+    { path: '', component: ContactsComponent},
+    { path: 'new', component: AddContactComponent, canActivate: [ AuthGuard ] },
+    { path: ':id', component: ContactDetailsComponent },
+  ]},
+  { path: 'faq', redirectTo: '/about' },
+  { path: 'about', component: AboutComponent },
+  { path: '**', component: PagenotfoundComponent}
 ];
 
 @NgModule({

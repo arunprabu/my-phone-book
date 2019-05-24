@@ -1,3 +1,22 @@
-<p>
-  about works!
-</p>
+<div class="container">
+  <h4>Without Pipe</h4>
+  {{ loremIpsum }}
+
+  <h4>Without Pipe</h4>
+  {{ loremIpsum | uppercase }}
+
+  <h4>Date Pipe </h4> 
+  {{ birthday }} <br>
+  {{ birthday | date }} <br>
+  {{ birthday | date: 'hh:mm:ss a on dd/MMMM/yyyy' }}
+
+  <hr>
+  <h4>Custom Pipe</h4>
+  Command is: ng g p shared/pipes/ellipsis
+  <p>{{loremIpsum | ellipsis}}</p>
+
+  <hr>
+  <p>{{loremIpsum | ellipsis: '60' }}</p>
+  <hr>
+  <p>{{loremIpsum | ellipsis: '240' }}</p>
+</div>

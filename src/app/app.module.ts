@@ -19,6 +19,8 @@ import { ColorizrDirective } from './concepts/sd/colorizr.directive';
 import { AddContactComponent } from './contacts/add-contact/add-contact.component';
 import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
 import { ProductsModule } from './products/products.module';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
 
 //Decorators  - function that gets a meta data as arg 
 //
@@ -37,7 +39,9 @@ import { ProductsModule } from './products/products.module';
     SdComponent,
     ColorizrDirective,
     AddContactComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
+    PagenotfoundComponent,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,
