@@ -1,0 +1,16 @@
+Directives
+=========
+Spl instructions for the DOM 
+1. Attribute Directives 
+  built-in 
+  examples: routerLink, ngClass, ngStyle 
+  
+  Custom Attribute Directives 
+
+2. Structural Directives 
+   A directive that will make an impact in the structure of the page.
+   *ngIf, *ngFor, ngSwitch 
+
+   ng g c concepts/sd -is 
+
+

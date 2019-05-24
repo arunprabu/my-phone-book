@@ -1,0 +1,31 @@
+<div>
+  <p>*ngIf</p>
+
+  <div *ngIf="isAuthenticated(); else loginWrapper" 
+  class="alert alert-success">
+      Thanks for loggin in...
+  </div>
+  <ng-template #loginWrapper>
+    <div class="alert alert-danger">
+      Not Authenticated. Pls login
+    </div>
+  </ng-template>
+
+  <hr>
+  <p>*ngFor</p>
+
+  <ul>
+    <li *ngFor="let submenu of submenuList">{{submenu}}</li>
+  </ul>
+  
+  <!-- ToDO: playaround with index in *ngFor -->
+  <!-- Todo: try ngSwitch -->
+
+  <hr>
+  <h4>Colorizr Directive Demo</h4>
+  <div appColorizr>
+    Colorizr Example 
+  </div>
+
+
+</div>

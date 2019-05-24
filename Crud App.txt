@@ -1,0 +1,28 @@
+CRUD App 
+===
+Forms 
+  1. Template Driven Forms 
+      HTML,
+      HTML5 Validation
+      Easy  
+      Minimal learning curve  
+      Not suitable for Complex validations (ex: email domain should be gmail.com, yahoo.com)
+      Not suitable for Unit Testing 
+      
+  2. Reactive Forms / Data Driven Forms  (most prefered )
+      HTML + TS 
+      Little larger curve 
+      moderate 
+      perfect for complex validations 
+      perfectly suitable for unit testing 
+
+
+Services
+REST API's 
+
+HTTP Requests 
+  GET, POST, PUT, DELETE 
+  Read, Create, Update, Delete 
+
+RXJS/ Observables,
+Subscription 
