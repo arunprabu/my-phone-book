@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingCartDataService } from '../../services/shopping-cart-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  cartItemsList: any[];
+  constructor( private shoppingCartDataService: ShoppingCartDataService, private router: Router) { }
 
   ngOnInit() {
+    //Step3: Subscribe the observable 
+    this.shoppingCartDataService.latestCartItems.subscribe( (res: any[] )=>{
+      console.log(res );
+      this.cartItemsList = res;
+    })
+  }  
+
+  gotoCartPage(){
+    this.router.navigate(['products', 'cart']);
   }
 
 }

@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { NavComponent } from './shared/nav/nav.component';
+import { NavComponent } from './shared/components/nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { ConceptsComponent } from './concepts/concepts.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -17,7 +18,9 @@ import { SdComponent } from './concepts/sd/sd.component';
 import { ColorizrDirective } from './concepts/sd/colorizr.directive';
 import { AddContactComponent } from './contacts/add-contact/add-contact.component';
 import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';  
-import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CartComponent } from './cart/cart.component';
 
 //Decorators  - function that gets a meta data as arg 
 //
@@ -36,7 +39,10 @@ import { HttpClientModule } from '@angular/common/http';
     SdComponent,
     ColorizrDirective,
     AddContactComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
+    ProductsComponent,
+    ProductDetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
