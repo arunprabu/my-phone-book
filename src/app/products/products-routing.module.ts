@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { ProductsComponent } from '../products.component';
-import { CartComponent } from '../cart/cart.component';
-import { ProductDetailsComponent } from '../product-details/product-details.component';
+import { ProductsComponent } from './products.component';
+import { CartComponent } from './cart/cart.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 //Setup Feature Routing
 const routes: Routes = [

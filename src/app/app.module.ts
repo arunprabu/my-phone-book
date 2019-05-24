@@ -18,7 +18,7 @@ import { SdComponent } from './concepts/sd/sd.component';
 import { ColorizrDirective } from './concepts/sd/colorizr.directive';
 import { AddContactComponent } from './contacts/add-contact/add-contact.component';
 import { ContactDetailsComponent } from './contacts/contact-details/contact-details.component';
-import { ProductsModule } from './products/products/products.module';
+import { ProductsModule } from './products/products.module';
 
 //Decorators  - function that gets a meta data as arg 
 //
