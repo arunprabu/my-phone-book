@@ -35,7 +35,6 @@
       <p>App Name: {{myAppName}}</p>
       <p>Exp: {{myExp}}</p>
       <p>{{ skillList[1] }}</p>
-      <p>{{myProfile.city}}</p>
       <p>{{getExp()}}</p>
       <!-- the below are also string interpolation-->
       <p title="{{myAppName}}">Mouse over pls</p>
@@ -45,10 +44,6 @@
       <h4>Property Binding</h4>
       <p [title]="myAppName">Mouse over pls -- this is prop binding</p>
       <input type="text" [value]="myAppName">
-
-      <div [ngClass]="blue">
-        This will not work -- because no such variable defined in TS 
-      </div>
 
       <div [ngClass]="{ 'blue': isAuth(), 'bold': false }">
         Logged In 

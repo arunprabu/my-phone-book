@@ -20,11 +20,6 @@ export class ConceptsComponent implements OnInit, AfterViewInit {
     'html', 'css', 'js'
   ];
 
-  myProfile: Object = {
-    city: "CHN",
-    skills: this.skillList  
-  }
-
   devName: string = "Arun";
   
   //for custom event binding
